@@ -1,16 +1,21 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 </head>
 <body>
-   <p>UserProfile Works</p>
-    <!--This for User Profile-->
 
-
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">×</a>
+  <i class="fas fa-home"></i><a href="#">Home</a>
+  <i class="fab fa-discourse"></i><a href="#">Discover</a>
+  <i class="far fa-circle"></i><a href="#">Communities</a>
+  <i class="fas fa-user-circle"></i><a href="#">Profile</a>
+</div>
+<div id="main">
+  <button class="openbtn" (click)="openNav()">☰</button>  
+</div>     
 </body>
-</html>
+</html> 
