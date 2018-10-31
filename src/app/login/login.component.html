@@ -1,1 +1,22 @@
-<p>login works!</p>
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+        <h1 style="margin: 0">Sign In</h1>
+        <form>
+            <label for="email">Email:</label><br />
+            <input type="email" name="email" [(ngModel)]="input.email" /><br />
+            <label for="psw">Password:</label><br />
+            <input type="password" name="password" [(ngModel)]="input.password" /><br />
+            <button type="button" (click)="login()">Login</button>
+        </form>
+        <p>
+            <a href [routerLink]="['/Signup']">Register</a>
+        </p>
+</body>
+</html>
